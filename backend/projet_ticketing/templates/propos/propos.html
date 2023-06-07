@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mon site</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/static/css/style.css">
+   
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand" href="#">Mon Site</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'accueil'  %}">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'propos'  %}">À propos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" href="#">Gestion incident</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Catégorie d'incident</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'urgent'  %}">Incident très urgent</a></li>
+                      <li><a class="dropdown-item" href="{% url 'moinurgent'  %}">Incident moin urgent</a> </li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" href="#">Service</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'communication'  %}">Communication interne </a></li>
+                  <li><a class="dropdown-item" href="{% url 'historique'  %}">Historique des incidents </a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contact
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="{% url 'inscription'  %}">S'Inscrire</a>
+            
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="{% url 'connexion'  %}">Connexion</a>
+          </li>
+        </ul>
+      </li>
+
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+ 
+     
+      <div class="containeres">
+        <div class="image-container">
+            <img src="{% static 'images/c.jpeg'%}" alt="Notre entreprise de fabrication d'anacarde">
+        </div>
+
+        <div class="text-container">
+            <h1>À propos de notre entreprise de Anatrans</h1>
+            <p> L'entreprise Anatrans est spécialisée dans la transformation de noix d'anacarde. Fondée il y a des années de cela, elle est devenue un leader dans l'industrie grâce à son engagement envers la qualité et son approche innovante. La société s'approvisionne
+                directement auprès des producteurs locaux pour s'assurer de la fraîcheur et de la qualité des noix. Une fois récoltées, les noix sont triées, lavées et séchées avant d'être traitées pour en extraire l'amande. L'entreprise utilise des équipements
+                de pointe pour assurer un traitement efficace et rapide des noix. Le processus de transformation comprend le décorticage, le triage, le nettoyage et le séchage des noix. Les amandes sont ensuite grillées, broyées et transformées en produits
+                finis tels que des beurres, des huiles et des en-cas sains.</p>
+            <p> La société est fière de sa contribution à la promotion de l'agriculture durable en travaillant directement avec les producteurs locaux et en leur offrant un marché pour leurs noix d'anacarde. Elle s'engage également à fournir des produits
+                de haute qualité qui répondent aux normes alimentaires et environnementales. En plus de son engagement envers la qualité et la durabilité, l'entreprise Anatrans est également connue pour son engagement envers la responsabilité sociale.
+                Elle travaille en étroite collaboration avec les communautés locales pour offrir des emplois et soutenir des projets de développement communautaire. En somme, l'entreprise Anatrans est une entreprise de transformation de noix d'anacarde
+                qui se distingue par son engagement envers la qualité, la durabilité et la responsabilité sociale. Grâce à son approche innovante et à sa collaboration avec les producteurs locaux, elle est devenue un leader dans l'industrie et continue
+                de croître en offrant des produits de haute qualité et en contribuant au développement économique et social des communautés locale.</p>
+                <h1>Voici un guide étape par étape pour faire une capture d'écran sur un ordinateur :</h1>
+                <p>Capture d'écran de tout l'écran :
+
+                  Sur un ordinateur Windows :
+                  
+                  Appuyez sur la touche "Impr écran" ou "PrtScn" (elle peut être étiquetée différemment selon votre clavier).
+                  La capture d'écran est maintenant dans votre presse-papiers. Vous pouvez l'enregistrer dans un logiciel de retouche d'image (comme Paint) en appuyant sur "Ctrl+V" pour coller l'image, puis l'enregistrer dans le format souhaité.
+                  Sur un Mac :
+                  
+                  Appuyez sur les touches "Shift + Command + 3".
+                  La capture d'écran est automatiquement enregistrée sur votre bureau dans un fichier au format PNG.
+                  Capture d'écran d'une partie spécifique de l'écran :
+                  
+                  Sur un ordinateur Windows :
+                  
+                  Appuyez sur la touche "Windows + Maj + S" pour ouvrir l'outil de capture d'écran intégré.
+                  Le curseur se transforme en une croix. Sélectionnez la zone que vous souhaitez capturer en cliquant et en faisant glisser le curseur.
+                  La capture d'écran est maintenant dans votre presse-papiers. Collez-la dans un logiciel de retouche d'image et enregistrez-la comme vous le souhaitez.
+                  Sur un Mac :
+                  
+                  Appuyez sur les touches "Shift + Command + 4". Le curseur se transforme en une croix.
+                  Sélectionnez la zone que vous souhaitez capturer en cliquant et en faisant glisser le curseur.
+                  La capture d'écran est automatiquement enregistrée sur votre bureau au format PNG.</p>
+        </div>
+    </div>
+
+    
+
+      <footer>
+        <div class="containers">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Nous contacter</h4>
+                    <p>Adresse : 123 rue de la République</p>
+                    <p>Téléphone : 01 23 45 67 89</p>
+                    <p>Email : contact@monentreprise.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Liens utiles</h4>
+                    <ul>
+                        <li><a href="index.php">Accueil</a></li>
+                        <li><a href="propos.php">À propos</a></li>
+                        <li><a href="poserprobleme.php">Services</a></li>
+                        <li><a href="connexion.php">Connexion</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <h4>Abonnez-vous</h4>
+                    <p>Recevez les dernières actualités de notre entreprise en vous abonnant à notre newsletter.</p>
+                    <form>
+                        <input type="email " placeholder="Entrez votre email " required>
+                        <button type="submit ">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+       
+        <script type="text/javascript " src="Js/bootstrap.bundle.min.js "></script>
+        <script type="text/javascript " src="Js/bootstrap.min.js "></script>
+        <script type="text/javascript " src="Js/popper.min.js "></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
